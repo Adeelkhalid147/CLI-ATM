@@ -1,3 +1,4 @@
+
 import inquirer from "inquirer";
 
 (async () => {
@@ -33,7 +34,7 @@ import inquirer from "inquirer";
       {
         message: `enter your amount`,
         name: `amount`,
-        type: `number`,
+        type: `input`,
         validate: (input) => {
           if (input > userdata.amount) {
             return `insufficent balance`;
@@ -46,4 +47,4 @@ import inquirer from "inquirer";
     userdata.amount -= enteramount.amount;
     console.log(`your remaining amount is `, userdata.amount);
   }
-})();
+})()

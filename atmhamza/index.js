@@ -31,7 +31,7 @@ import inquirer from "inquirer";
             {
                 message: `enter your amount`,
                 name: `amount`,
-                type: `number`,
+                type: `input`,
                 validate: (input) => {
                     if (input > userdata.amount) {
                         return `insufficent balance`;
